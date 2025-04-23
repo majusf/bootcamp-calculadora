@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta cha   rset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora</h1>
-    <input />
-    <input />
-    <button>Somar</button>
-    <input readonly/>
+    <div class="container">
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <input id="number1" type="number"/>
+            <input id="number2" type="number"/>
+            <div class="op">
+                <button onclick="calcular('+')">+</button>
+                <button onclick="calcular('-')">-</button>
+                <button onclick="calcular('*')">*</button>
+                <button onclick="calcular('/')">/</button>
+            </div>
+            <input id="output" type="text" readonly/>
+        </div>
+        <div class="historico">
+            <h1>Histórico:</h1>
+            <p>10 últimas operações:</p>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+    
 </body>
 </html>
